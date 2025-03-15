@@ -22,6 +22,7 @@ mongoose
 // Routes
 const couponRoutes = require("./routes/coupons");
 app.use("/api/coupons", couponRoutes);
+app.use("/", (req, res) => res.send("Coupon Service"));
 
 // Start Server
 const PORT = process.env.PORT || 5000;
