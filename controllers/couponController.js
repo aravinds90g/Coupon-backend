@@ -6,7 +6,7 @@ let lastAssignedIndex = 0;
 
 exports.claimCoupon = async (req, res) => {
   try {
-    const userIP = req.ip;
+    const userIP = req.body.ip;
     console.log("User IP:", userIP);
 
    
